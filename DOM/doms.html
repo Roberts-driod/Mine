@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        button {
+            width: 200px;
+            height: 200px;
+        }
+
+        input {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <form action="#">
+        <label for="Teksts">Text</label>
+        <input type="text" id="Teksts">
+        <button id="btn">Buttons clicker</button>
+
+    </form>
+
+
+    <script>
+        let inputTK = document.getElementById("Teksts");
+        let buttton = document.getElementById("btn");
+        function myName() {
+            console.log("Ped");
+        };
+
+        function inputText() {
+            console.log(inputTK.value);
+        };
+        buttton.addEventListener("click", inputText);
+
+
+
+    </script>
+</body>
+
+</html>

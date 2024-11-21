@@ -1,0 +1,111 @@
+/* Bāzes stils */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /*
+  forma 
+  */
+  form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  /*
+  lauki, pogas
+  */
+  label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  /*
+  animācija
+  */
+  button:active {
+    transform: scale(0.98);
+  }
+  /*
+  grupa stilizēšana
+  */
+  div {
+    margin-bottom: 15px;
+  }
+  input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+
+
+
+  /*
+  Radio pogas vieta
+*/
+  .radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Atstarpe starp radio pogām un tekstu */
+  }
+  
+  input[type="radio"], input[type="checkbox"] {
+    margin: 0;
+    vertical-align: middle;
+  }
+  label {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+/*
+checkbox izlīdzinājums
+*/
+  .checkbox-group {
+    display: flex;
+    align-items: center; /* Vertikālā izlīdzināšana */
+    gap: 10px; /* Atstarpe starp rūtiņu un tekstu */
+  }
+  
+  input[type="checkbox"] {
+    margin: 0; /* Noņem noklusējuma margin */
+    vertical-align: middle; /* Vertikālā izlīdzināšana */
+  }

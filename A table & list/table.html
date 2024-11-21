@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+        .out-of-stock {
+            text-decoration: line-through;
+            color: red;
+        }
+        .product-name {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Stock</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td class="product-name">Product 1</td>
+                <td>19.99</td>
+                <td>In Stock</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td class="product-name">Product 2</td>
+                <td>29.99</td>
+                <td>In Stock</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td class="product-name">Product 3</td>
+                <td>59.99</td>
+                <td class="out-of-stock">Out of Stock</td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td class="product-name">Product 4</td>
+                <td>39.99</td>
+                <td>In Stock</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        button {
+            width: 200px;
+            height: 50px;
+        }
+    </style>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <button id="btn">Click</button>
+    <p id="result"></p>
+
+    <script>
+        let numer1 = document.getElementById("num1");
+        let numer2 = document.getElementById("num2");
+        let button = document.getElementById("btn");
+        let resultParagraph = document.getElementById("result");
+
+        button.addEventListener("click", numbCore);
+
+        function numbCore() {
+            // Iegūstam ievadītos skaitļus un pārvēršam tos par skaitļiem
+            let num1Value = parseInt(numer1.value);
+            let num2Value = parseInt(numer2.value);
+            let numbersBetween = [];
+
+            // Pārbauda, vai skaitļi ir ievadīti pareizi (pozitīvi un num1 < num2)
+            if (num1Value < num2Value && num1Value > 0 && num2Value > 0) {
+                console.log("Skaitļi ir ievadīti pareizi!");
+
+                // Atrodam visus naturālos skaitļus starp num1 un num2
+                for (let i = num1Value; i <= num2Value; i++) {
+                    numbersBetween.push(i);
+                }
+
+                // Izvadām rezultātus gan konsolē, gan paragrāfā
+                console.log("Skaitļi starp " + num1Value + " un " + num2Value + ": " + numbersBetween.join(", "));
+                resultParagraph.textContent = "Skaitļi starp " + num1Value + " un " + num2Value + ": " + numbersBetween.join(", ");
+            } else {
+                // Ja ievadītie skaitļi nav derīgi, parādam alert
+                alert("Skaitļi ir ievadīti nepareizi!");
+            }
+        }
+    </script>
+</body>
+</html>

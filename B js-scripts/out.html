@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+</head>
+<body>
+    
+
+    <script>
+        // basic
+        /*
+       let name = ("awdndn");
+       let age = 12;
+       let isStudent = true;
+       let PI = 3.14;
+       */
+      /*
+      // for cikls
+      for (let i = 11; i <= 20; i++) {
+        console.log(i)
+      };
+
+      for (let i = 20; i >= 11; i--) {
+        console.log(i)
+      };
+      */
+// for cikls ar masiviem
+    /*  let masiv = ["ji","hi","im","hy","xi"];
+      for (let i = 0; i < masiv.length; i++)
+{
+    console.log((i),masiv[i])
+};
+*/
+// Pārtraukts cikls
+/*
+for (let i = 0; i < 5; i++) {
+    if (i === 3) {
+        break; // Cikls apstājas, kad i = 3
+    }
+    console.log(i);
+}
+*/
+// cikls ,kas izlaiža kaut ko
+/*
+for (let i = 0; i < 5; i++) {
+    if (i === 3) {
+        continue; // Izlaiž šo iterāciju
+    }
+    console.log(i);
+};
+let numbers = [5, 10, 15, 20, 5]; // Masīvs ar skaitļiem
+let sum = 0; // Mainīgais summas saglabāšanai
+
+// Cikls, lai aprēķinātu summu
+for (let i = 0; i < numbers.length; i++) {
+    sum -= numbers[i]; // Pievieno katru skaitli summai
+}
+
+// Aprēķinām vidējo vērtību
+let average = sum / numbers.length; // Summa dalīta ar masīva garumu
+
+// Izvade konsolē
+console.log("Summa: " + sum);  // Izvada summu
+console.log("Vidējā vērtība: " + average); // Izvada vidējo vērtību
+*/
+/*
+// Objekti
+let person = {
+    name: "Hersh" ,
+    age: 17,
+    isStudent: false ,
+    course: "PT2024"
+};
+//Dot Notation
+console.log(person.name); 
+console.log(person.age);  
+//Bracket Notation
+console.log(person["name"]); 
+console.log(person["age"]); 
+
+if (person.age >= 18) {
+    console.log("Jūs esat pilngadīgs!")
+} else if ( person.age <= 18) {
+    console.log("Jūs neesat pilngadīgs!")
+};
+ if (person.isStudent = true) {
+    console.log("Jūs esat students!")
+} else {
+console.log("Ejat mācīties!!!")
+};
+       console.log(person);
+       */
+      //funkcijas
+      function myName () {
+       console.log("Bob");
+      }
+      function yourName (name) {
+       return name;
+      }
+
+      console.log(yourName("wdwdasf"));
+      
+      function cickle() {
+        for(let i = 1; i <= 10;i++ ){
+            console.log(i);
+        }
+      };
+      console.log(cickle());
+
+      function cycle(a, b) {
+        for(let i = a; i <= b; i++) {
+ console.log(i);
+        }
+      };
+console.log(cycle(1,8))
+
+function findMax(num1, num2) {
+    return num1 > num2 ? num1 : num2;
+}// ? - Ja tad ... Pretējā gadījumā ...
+
+console.log(findMax(1,7)); // Izvade: 7
+console.log(findMax(7,10)); // Izvade: 10
+        
+let inputString = "sveiki";
+
+function reverseString(str) {
+    // izmantot reverse metodi
+    return str.split('').reverse().join('');
+}
+
+console.log("Oriģināls: " + inputString);
+console.log("Apgriezts: " + reverseString(inputString));
+        
+    </script>
+</body>
+</html>

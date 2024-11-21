@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praks</title>
+    <link rel="stylesheet" href="1fort.css">
+    
+</head>
+
+<body>
+   
+    <h1>Lietotāja reģistrācijas forma</h1>
+
+    <form action="/submit_registration" method="POST">
+      <label for="name">Vārds:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">E-pasts:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Parole:</label>
+      <input type="password" id="password" name="password" required />
+
+      <label for="phone">Telefona numurs:</label>
+      <input type="tel" id="phone" name="phone" />
+
+      <label for="age">Vecums:</label>
+      <input type="number" id="age" name="age" min="18" max="100" required />
+
+      <label for="dob">Dzimšanas datums:</label>
+      <input type="date" id="dob" name="dob" />
+
+      <label for="website">Mājaslapa:</label>
+      <input type="url" id="website" name="website" />
+
+      <div class="radio-group">
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Vīrietis</label>
+      
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Sieviete</label>
+      </div>
+     
+      <div class="checkbox-group">
+        <input type="checkbox" id="newsletter" name="newsletter" value="yes" />
+        <label for="newsletter">Saņemt jaunumu vēstules</label>
+      </div>
+      
+
+      <label for="profile_picture">Profila attēls:</label>
+      <input type="file" id="profile_picture" name="profile_picture" />
+
+      <button type="submit">Reģistrēties</button>
+    </form>
+</body>
+</html>
